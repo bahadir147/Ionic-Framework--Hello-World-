@@ -1,0 +1,24 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Merhaba Dünya
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+<ion-card>
+
+  <ion-card-header text-center>
+    Hello World
+  </ion-card-header>
+ <form #form="ngForm" (ngSubmit)="AlerForm()">
+  <ion-card-content>
+   <ion-item>
+    <ion-input type="text" [(ngModel)]="alertmessage.name" name="name" placeholder="İsmin nedir?"></ion-input>
+  </ion-item>
+  <button ion-button type="submit" >Tıkla!</button>
+  </ion-card-content>
+</form>
+</ion-card>
+</ion-content>
